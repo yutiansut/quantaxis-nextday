@@ -1,0 +1,70 @@
+name: 🚀 功能增强许愿 (Feature Enhancement Wish)
+description: 提交新功能需求或功能增强建议
+title: "[WISH] "
+labels: ["enhancement", "wish"]
+assignees:
+  - yutiansut
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您提交功能增强许愿！请详细描述您希望实现的功能。
+        
+        Thank you for submitting a feature enhancement wish! Please describe the feature you'd like to see implemented in detail.
+
+  - type: input
+    id: wish-title
+    attributes:
+      label: 许愿标题 (Wish Title)
+      description: 简明扼要地描述您的需求
+      placeholder: 例如：添加新的技术指标计算功能
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 详细描述 (Detailed Description)
+      description: 详细说明您希望实现的功能或改进
+      placeholder: 请详细描述功能的具体内容、工作原理等
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: 使用场景 (Use Case)
+      description: 描述在什么情况下会用到这个功能
+      placeholder: 例如：在量化策略回测时需要计算自定义指标
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-outcome
+    attributes:
+      label: 期望效果 (Expected Outcome)
+      description: 描述实现后的预期效果
+      placeholder: 实现这个功能后，用户能够...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 优先级 (Priority)
+      description: 您认为这个功能的优先级如何？
+      options:
+        - 高 (High)
+        - 中 (Medium)
+        - 低 (Low)
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: 附加信息 (Additional Information)
+      description: 任何其他相关信息、参考资料或代码示例
+      placeholder: 可以包含参考链接、代码示例、相关文档等
+    validations:
+      required: false

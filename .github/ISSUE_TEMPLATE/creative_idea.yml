@@ -1,0 +1,80 @@
+name: 💡 创意想法许愿 (Creative Ideas Wish)
+description: 分享创新的想法和建议
+title: "[IDEA] "
+labels: ["idea", "wish"]
+assignees:
+  - yutiansut
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您分享创意想法！我们欢迎任何创新的思路和建议。
+        
+        Thank you for sharing your creative ideas! We welcome any innovative thoughts and suggestions.
+
+  - type: input
+    id: idea-title
+    attributes:
+      label: 创意标题 (Idea Title)
+      description: 简明扼要地描述您的创意想法
+      placeholder: 例如：集成AI自动策略优化功能
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea-description
+    attributes:
+      label: 创意描述 (Idea Description)
+      description: 详细描述您的创意想法
+      placeholder: 详细说明这个想法的核心概念和创新点
+    validations:
+      required: true
+
+  - type: textarea
+    id: inspiration
+    attributes:
+      label: 灵感来源 (Inspiration Source)
+      description: 这个想法是如何产生的？
+      placeholder: 例如：在使用某个功能时想到的改进方案，或者看到某篇文章后的思考
+    validations:
+      required: false
+
+  - type: textarea
+    id: potential-benefits
+    attributes:
+      label: 潜在收益 (Potential Benefits)
+      description: 实现这个想法能带来什么好处
+      placeholder: 例如：提高策略收益率、降低风险、提升用户体验等
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation-ideas
+    attributes:
+      label: 实现思路 (Implementation Ideas)
+      description: 您认为如何实现这个想法
+      placeholder: 可以是技术方案、产品设计或其他实现路径
+    validations:
+      required: false
+
+  - type: dropdown
+    id: feasibility
+    attributes:
+      label: 可行性评估 (Feasibility Assessment)
+      description: 您认为这个想法的实现难度如何？
+      options:
+        - 容易实现 (Easy to implement)
+        - 中等难度 (Medium difficulty)
+        - 较难实现 (Difficult to implement)
+        - 不确定 (Uncertain)
+    validations:
+      required: false
+
+  - type: textarea
+    id: related-resources
+    attributes:
+      label: 相关资源 (Related Resources)
+      description: 相关的技术、工具、文献或案例
+      placeholder: 可以包含开源项目、技术文档、相关产品等
+    validations:
+      required: false

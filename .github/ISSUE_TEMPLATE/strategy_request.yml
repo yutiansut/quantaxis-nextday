@@ -1,0 +1,89 @@
+name: 📈 策略相关许愿 (Strategy Related Wish)
+description: 提交交易策略相关的需求和建议
+title: "[STRATEGY] "
+labels: ["strategy", "wish"]
+assignees:
+  - yutiansut
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您提交策略相关许愿！请详细描述您的策略需求。
+        
+        Thank you for submitting a strategy-related wish! Please describe your strategy requirements in detail.
+
+  - type: input
+    id: strategy-title
+    attributes:
+      label: 策略许愿标题 (Strategy Wish Title)
+      description: 简明扼要地描述您的策略需求
+      placeholder: 例如：添加RSI背离策略模板
+    validations:
+      required: true
+
+  - type: dropdown
+    id: strategy-type
+    attributes:
+      label: 策略类型 (Strategy Type)
+      description: 这是什么类型的策略需求？
+      options:
+        - 技术分析策略 (Technical Analysis Strategy)
+        - 基本面分析策略 (Fundamental Analysis Strategy)
+        - 量化因子策略 (Quantitative Factor Strategy)
+        - 高频交易策略 (High Frequency Trading Strategy)
+        - 风险管理策略 (Risk Management Strategy)
+        - 资产配置策略 (Asset Allocation Strategy)
+        - 其他 (Other)
+    validations:
+      required: true
+
+  - type: textarea
+    id: strategy-description
+    attributes:
+      label: 策略描述 (Strategy Description)
+      description: 详细描述策略的逻辑和实现思路
+      placeholder: 详细说明策略的交易信号、进出场条件、风控措施等
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical-requirements
+    attributes:
+      label: 技术要求 (Technical Requirements)
+      description: 实现这个策略需要哪些技术支持
+      placeholder: 例如：需要实时数据接口、特定的技术指标计算、回测框架支持等
+    validations:
+      required: true
+
+  - type: textarea
+    id: data-requirements
+    attributes:
+      label: 数据需求 (Data Requirements)
+      description: 策略需要什么类型的数据
+      placeholder: 例如：股票分钟级数据、财务数据、宏观经济数据等
+    validations:
+      required: true
+
+  - type: dropdown
+    id: market-type
+    attributes:
+      label: 适用市场 (Target Market)
+      description: 策略主要适用于哪个市场？
+      options:
+        - A股市场 (Chinese A-Share Market)
+        - 美股市场 (US Stock Market)
+        - 港股市场 (Hong Kong Stock Market)
+        - 期货市场 (Futures Market)
+        - 数字货币市场 (Cryptocurrency Market)
+        - 多市场通用 (Multi-Market)
+    validations:
+      required: true
+
+  - type: textarea
+    id: reference-materials
+    attributes:
+      label: 参考资料 (Reference Materials)
+      description: 相关的研究论文、文章或其他参考资料
+      placeholder: 可以包含论文链接、书籍章节、网站文章等
+    validations:
+      required: false

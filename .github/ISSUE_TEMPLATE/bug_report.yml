@@ -1,0 +1,83 @@
+name: 🐛 问题修复许愿 (Bug Fix Wish)
+description: 报告问题并建议修复方案
+title: "[BUG] "
+labels: ["bug", "wish"]
+assignees:
+  - yutiansut
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您报告问题！请详细描述遇到的问题和建议的解决方案。
+        
+        Thank you for reporting an issue! Please describe the problem and suggested solution in detail.
+
+  - type: input
+    id: bug-title
+    attributes:
+      label: 问题标题 (Bug Title)
+      description: 简明扼要地描述问题
+      placeholder: 例如：数据获取API在特定条件下返回错误结果
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: 问题描述 (Bug Description)
+      description: 详细描述遇到的问题
+      placeholder: 详细说明问题的表现、出现条件等
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: 重现步骤 (Steps to Reproduce)
+      description: 如何重现这个问题
+      placeholder: |
+        1. 执行...
+        2. 调用...
+        3. 观察结果...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: 期望行为 (Expected Behavior)
+      description: 您期望的正确行为是什么
+      placeholder: 应该返回正确的数据格式和内容
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: 实际行为 (Actual Behavior)
+      description: 实际发生了什么
+      placeholder: 实际返回了错误的数据或异常
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-fix
+    attributes:
+      label: 建议修复方案 (Suggested Fix)
+      description: 您建议如何修复这个问题
+      placeholder: 可以修改...函数，添加...检查等
+    validations:
+      required: false
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 环境信息 (Environment)
+      description: 相关的环境信息
+      placeholder: |
+        - 操作系统：
+        - Python版本：
+        - QuantAxis版本：
+        - 其他相关依赖：
+    validations:
+      required: false
